@@ -139,7 +139,7 @@ export default function ContactPage() {
                 
                 <div>
                   <h3 className="font-semibold text-lg mb-2 text-gray-900">Working Hours</h3>
-                  <p className="text-gray-600 mb-1">Monday - Friday: 9:00 AM - 6:00 PM EST</p>
+                  <p className="text-gray-600 mb-1">Monday - Friday: 9:00 AM - 6:00 PM IST</p>
                   <p className="text-gray-600">24/7 Support for traveling clients</p>
                 </div>
                 
