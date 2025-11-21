@@ -17,8 +17,15 @@ export default function Header() {
         <div className="flex justify-between items-center h-full">
           <div className="flex">
             <div className="flex-shrink-0 flex items-center">
-              <Link href="/" className="text-2xl font-bold text-blue-600">
-                Delta DMC
+              <Link href="/" className="flex items-center gap-3">
+                <Image
+                  src="https://res.cloudinary.com/dwcislsn6/image/upload/v1763725922/Delta_dmc_logo-removebg-preview_xftabl.png"
+                  alt="Delta DMC Logo"
+                  width={50}
+                  height={50}
+                  className="object-contain"
+                />
+                <span className="text-2xl font-bold text-blue-600">Delta DMC</span>
               </Link>
             </div>
           </div>
@@ -77,26 +84,26 @@ export default function Header() {
       {isMenuOpen && (
         <div className="md:hidden absolute top-16 left-0 right-0 bg-[#f4f7f0] shadow-md rounded-b-lg">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <Link href="/" className="block px-3 py-2 text-black text-lg
+            <Link href="/" onClick={() => setIsMenuOpen(false)} className="block px-3 py-2 text-black text-lg
             -700 hover:text-blue-600 hover:bg-gray-100 font-bold rounded-md">
               Home
             </Link>
-            <Link href="/destinations" className="block px-3 py-2 text-gray-700 text-lg hover:text-blue-900 hover:bg-black
+            <Link href="/destinations" onClick={() => setIsMenuOpen(false)} className="block px-3 py-2 text-gray-700 text-lg hover:text-blue-900 hover:bg-black
             -100 font-bold rounded-md">
               Destinations
             </Link>
-            <Link href="/services" className="block px-3 py-2 text-black text-lg
+            <Link href="/services" onClick={() => setIsMenuOpen(false)} className="block px-3 py-2 text-black text-lg
             -700 hover:text-blue-600 hover:bg-gray-100 font-bold rounded-md">
               Services
             </Link>
-            <Link href="/about" className="block px-3 py-2 text-gray-700 text-lg hover:text-blue-600 hover:bg-gray-100 font-bold rounded-md">
+            <Link href="/about" onClick={() => setIsMenuOpen(false)} className="block px-3 py-2 text-gray-700 text-lg hover:text-blue-600 hover:bg-gray-100 font-bold rounded-md">
               About Us
             </Link>
-            <Link href="/contact" className="block px-3 py-2 text-gray-700 text-lg hover:text-blue-600 hover:bg-gray-100 font-bold rounded-md">
+            <Link href="/contact" onClick={() => setIsMenuOpen(false)} className="block px-3 py-2 text-gray-700 text-lg hover:text-blue-600 hover:bg-gray-100 font-bold rounded-md">
               Contact
             </Link>
-            <Link href="/contact" className="block px-3 py-2 mx-3 mt-2 text-center text-white text-lg bg-blue-600 hover:bg-blue-700 font-bold rounded-full">
-              Partner Login
+            <Link href="/contact" onClick={() => setIsMenuOpen(false)} className="block px-3 py-2 mx-3 mt-2 text-center text-white text-lg bg-blue-600 hover:bg-blue-700 font-bold rounded-full">
+              Partner Registration
             </Link>
           </div>
         </div>
