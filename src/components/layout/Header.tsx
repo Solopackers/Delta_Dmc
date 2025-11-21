@@ -95,7 +95,7 @@ export default function Header() {
             <Link href="/contact" className="block px-3 py-2 text-gray-700 text-lg hover:text-blue-600 hover:bg-gray-100 font-bold rounded-md">
               Contact
             </Link>
-            <Link href="/login" className="block px-3 py-2 mx-3 mt-2 text-center text-white text-lg bg-blue-600 hover:bg-blue-700 font-bold rounded-full">
+            <Link href="/contact" className="block px-3 py-2 mx-3 mt-2 text-center text-white text-lg bg-blue-600 hover:bg-blue-700 font-bold rounded-full">
               Partner Login
             </Link>
           </div>
